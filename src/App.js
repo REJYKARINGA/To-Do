@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import Products from './components/Products/Products'
+// import Effects from './components/Effects/Effects'
+// import { Container } from 'react-bootstrap';
+// import MainRouter from './components/ReactRouter/MainRouter';
+import Todo from './components/Todoapp/Todo'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div className="App"> 
+<Todo />
+    {/* <MainRouter /> */}
+    {/* <Effects /> */}
+    {/* <Container>
+    <Products />
+    </Container> */}
     </div>
   );
 }
