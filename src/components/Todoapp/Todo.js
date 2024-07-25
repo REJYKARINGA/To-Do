@@ -22,7 +22,7 @@ const Todo = () => {
             setIsEditing(false)
             setEditIndex(null)
         } else {
-            const newTask = [{ title },...tasks ]
+            const newTask = [...tasks,{ title } ]
             setTasks(newTask)
         }
         setCurrentTask('')
